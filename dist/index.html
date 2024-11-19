@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body class="">
+
+    <main class="max-w-2xl  w-1/2 mx-auto h-80 my-11	">
+        <header id="edd-header" class="flex justify-between  ">
+            <div id="edd-title" class=" mx-6 my-3 font-bold text-l">
+                <p>devfinder</p>
+            </div>
+            <div class="flex items-center text-gray-500 gap-1">
+                <p>DARK</p>
+                <button id="edd-mode" class=" flex  mr-10 my-3">
+                    <svg id="edd-dark-mode" class="w-5 h-5 " fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    
+                </button>
+            </div>
+            <div class="flex items-center text-gray-500 gap-1">
+                <p>LIGHT</p>
+                <button id="edd-mode" class=" flex  mr-10 my-3">
+                    
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+           
+        </header>
+
+
+        <form class="max-w-md mx-6 shadow-xl">
+            <label for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute ml-1 inset-y-0 start-0 flex items-center px-1 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                </div>
+                <input type="search" id="default-search"
+                    class="block w-3/4 h-7 border-none ml-7 p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="  Search Githup username..." required />
+                <button type="submit"
+                    class="text-white absolute end-2 bottom-0.5  ml-12 left-80 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-lg text-sm px-4 py-0.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">Search</button>
+            </div>
+        </form>
+        <section class="  rounded-lg  shadow-xl border-current mx-6 mr-10 py-2 my-3 scale-150 ">
+            <div class="flex">
+                <div id="edd-img" class=" w-1/5 ml-4 mt-3">
+                    <img class="rounded-full" src="./images/avatar-2.jpg" alt="image de utilisateur">
+                </div>
+                <div id="edd-description" class="w-4/5  ml-3 ">
+                    <div id="edd-desc" class=" flex flex-wrap justify-between">
+                        <div id="edd-name-div" class="mb-1 font-bold  text-gray-600 ">
+                            <h1 id="edd-name"> Kasia Zaleska</h1>
+                        </div>
+                        <div id="edd-joined-date-div" class="mb-1 mr-3 text-sm text-gray-400 ">
+                            <p id="edd-joined-date">Joined 16 Mar 2020</p>
+                        </div>
+                        <div id="edd-username-div" >
+                            <h3 id="edd-username" class="text-xs  text-blue-500">@kzaleskaa</h3>
+                            <p id="edd-bio-div" class="text-xs text-gray-400">
+                                This profile has no bio .
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div id="edd-profile-info"
+                class=" h-16  items-center mr-8 ml-28  rounded-lg flex  justify-evenly font-semibold text-xs text-gray-500 bg-gray-100">
+                <div id="edd-repo" class="flex flex-col  items-center  ">
+                    <h2>Repos</h2>
+                    <h3 class="text-xs">16</h3>
+                </div>
+                <div id="edd-followers" class="flex flex-col items-center">
+                    <h2>Followers</h2>
+                    <h3 class="text-xs">16</h3>
+                </div>
+                <div id="edd-following" class="flex flex-col  items-center ">
+                    <h2>Following</h2>
+                    <h3 class="text-xs">16</h3>
+                </div>
+            </div>
+            <div id="edd-footer" class=" mr-8 ml-28 my-5  grid grid-cols-2 text-sm  grid-rows-2 gap-2 text-gray-400 ">
+                <div id="edd-location" class="flex">
+                    <img class="w-3 h-4" src="./images/icon-location.svg" alt="location icon">
+                    <p class="ml-4">Warsaw </p>
+                </div>
+                <div id="edd-website" class="flex">
+                    <img class="w-3 h-4" src="./images/icon-website.svg" alt="website icon">
+                    <div class="ml-4">
+                        <a href="kzaleskaa.github.io">kzaleskaa.github.io</a>
+                    </div>
+                </div>
+                <div id="edd-twitter" class="flex">
+                    <img class="w-4 h-4" src="./images/icon-twitter.svg" alt="twitter icon">
+                    <div class="ml-4 text-gray-200 ">
+                        <a  href="#"> Not available </a>
+                    </div>
+                </div>
+                <div id="edd-company" class="flex">
+                    <img class="w-4 h-4" src="./images/icon-company.svg" alt="company icon">
+                    <p class="ml-4">Snowflake</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
